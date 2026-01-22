@@ -444,7 +444,7 @@ class ScannerGUI(ctk.CTk):
         self.scanner = scanner_logic
         self.archivo_actual = None
         
-        self.title("Analizador léxico - Grupo 11")
+        self.title("Analizador sintáctico - Grupo 11")
         self.geometry("1400x900")
 
         try:
@@ -483,7 +483,7 @@ class ScannerGUI(ctk.CTk):
         logo_frame = ctk.CTkFrame(self.sidebar, fg_color="transparent")
         logo_frame.pack(pady=(40, 40))
         ctk.CTkLabel(logo_frame, text="⚡", font=("Segoe UI", 40)).pack(side="left", padx=5)
-        ctk.CTkLabel(logo_frame, text="ANALIZADOR\nLÉXICO", font=("Orbitron", 26, "bold"), text_color=self.col_pink).pack(side="left")
+        ctk.CTkLabel(logo_frame, text="ANALIZADOR\nSINTÁCTICO", font=("Orbitron", 20, "bold"), text_color=self.col_pink).pack(side="left")
 
         btn_style = {"font": ("Segoe UI", 13, "bold"), "height": 50, "corner_radius": 8, "anchor": "w"}
         
